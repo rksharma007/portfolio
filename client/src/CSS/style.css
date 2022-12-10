@@ -30,6 +30,15 @@ html {
     box-shadow: none !important;
   }
 
+  img {
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+    /* user-drag: none;   */
+    user-select: none;
+  }
+
   /* .button {
     position: relative;
     border: none;
@@ -209,8 +218,8 @@ html {
   
   .navbar-toggler span {
     display: block !important;
-    background-color: var(--my-primary-color) !important;
-    height: 4px !important;
+    background-color: var(--my-tertiary-color) !important;
+    height: 2px !important;
     width: 27px !important;
     margin-top: 5px !important;
     margin-bottom: 5px !important;
@@ -251,25 +260,37 @@ html {
     transform: rotate(-135deg) !important;
     opacity: 0.9 !important;
   }
+
+  .logo {
+    height: 2.4rem !important;
+    width: auto !important;
+  }
   
   @media (max-width: 767px) {
     .navbar {
-      padding: 1rem 2rem !important;
+      padding: 1rem .3rem !important;
       font-size: 1.4rem !important;
-      background-color: #271818 !important;
+      /* background-color: var(--my-dark-color) !important; */
+      background-color: #1a2d2e66 !important;
+      transition: all 0.3s ease-out 0s !important;
+      box-shadow: 0px 10px 10px 0px rgba(13, 80, 96, 0.171) !important;
+      -webkit-backdrop-filter: blur(5px) !important;
+      backdrop-filter: blur(5px) !important;
     }
     .navbar-nav .nav-item a::after {
       display: none !important;
+    }
+
+    .logo {
+      height: 2rem !important;
+      width: auto !important;
     }
   }
   .navbar-brand {
     color: rgb(250, 250, 250) !important;
   }
   
-  .logo {
-    height: 2em !important;
-    width: auto !important;
-  }
+  
   
   .navbar-nav .nav-link {
     color: white !important;
@@ -293,14 +314,12 @@ html {
   }
   
   .navbar-nav .nav-item a {
-    font-weight: 200;
+    font-weight: 300;
     transition: all 0.3s ease-out 0s;
     position: relative;
     z-index: 1;
     
   }
-
-  
   
   .navbar-nav .nav-item a::after {
     content: "";
@@ -374,25 +393,28 @@ html {
   }
   
   .home-header {
-    padding-top: 80px !important;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
   }
-  
-  .home-section {
-    position: relative;
-    z-index: 1;
-    background-image: url(../assets/bg-red.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    /* padding-bottom: 30px !important;
-    padding-top: 30px !important; */
+
+  @media screen and (max-width: 767px) {
+
+    .home-header {
+      position: relative;
+    }
+    .home-row {
+      flex-direction: column;
+    }
   }
   
   .home-content {
     position: relative;
-    z-index: 1;
     padding: 9rem 0 2rem !important;
     color: whitesmoke;
-    text-align: left;
+    z-index: 2;
   }
 
   .heading {
@@ -415,7 +437,6 @@ html {
     color: var(--my-tertiary-color) !important;
     font-weight: 100 !important;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: var(--my-tertiary-color); */
   }
   .Typewriter__cursor {
     font-size: 2em !important;
@@ -423,11 +444,11 @@ html {
     color: var(--my-tertiary-color) !important;
   }
   
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .Typewriter__wrapper {
       font-size: 1.4em !important;
-      font-weight: 100 !important;
-      position: absolute !important;
+      font-weight: 300 !important;
+      /* position: absolute !important; */
     }
     .Typewriter__cursor {
       display: none !important;
@@ -521,6 +542,11 @@ html {
     display: inline-block !important;
     padding-right: 15px;
     padding-left: 15px;
+    color: white;
+  }
+
+  .social-icons i{
+    color: var(--my-tertiary-color);
   }
   
   .icon-colour {
@@ -531,12 +557,12 @@ html {
   /* Footer */
   /* --------- */
   .footer {
-    background-color: rgb(10, 4, 22);
+    background-color: rgba(37, 37, 37, 0.378);
     bottom: 0 !important;
     padding-top: 10px !important;
     padding-bottom: 8px !important ;
   }
-  .footer-copywright {
+  .footer-copyright {
     text-align: center !important;
   }
   
@@ -546,7 +572,7 @@ html {
   }
   
   @media (max-width: 767px) {
-    .footer-copywright {
+    .footer-copyright {
       text-align: center !important;
     }
   
@@ -555,9 +581,10 @@ html {
     }
   }
   
-  .footer h3 {
-    font-size: 1em;
-    color: white !important;
+  .footer h6 {
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5) !important;
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
   }
@@ -871,3 +898,80 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
+
+
+/* Spinner */
+.spinner-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: #0c0513;
+
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44.8px;
+  height: 44.8px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+  z-index: 999999;
+  /* background-color: #0c0513; */
+}
+
+.spinner > div {
+  background-color: rgba(71, 246, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2.2px solid var(--my-tertiary-color)
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22.4px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22.4px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+.spinner-none {
+  opacity: 0;
+}

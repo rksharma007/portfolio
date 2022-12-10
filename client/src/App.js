@@ -22,7 +22,8 @@ const App = () => {
 
   return (
     <Router>
-      <PreLoader load={load} />
+      {/* <PreLoader load={load} /> */}
+      {load && <PreLoader/>}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <NavbarMain />
         <Routes>

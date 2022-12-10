@@ -1,10 +1,9 @@
-import React from 'react';
 
 const Home2 = () => {
   
   return (
-    <div className='container'>
-
+    <div>
+      <h1 className="text-light">Home page 2</h1>
     </div>
   )
 };

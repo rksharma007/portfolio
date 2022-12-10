@@ -2,10 +2,10 @@
    width: 100%;
    height: 100%;
    display: flex;
-   /* align-items: center;
+   align-items: center;
    justify-content: center;
    text-align: center;
-   background-color: #222; */
+   /* background-color: #222; */
 }
 
 .glitch {
@@ -18,6 +18,15 @@
    letter-spacing: 10px;
    z-index: 1;
 }
+
+@media (max-width:767px) {
+   .glitch {
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 5px;
+   }
+}
+
 
 .glitch:before,
 .glitch:after {
