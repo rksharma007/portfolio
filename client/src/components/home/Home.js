@@ -1,6 +1,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Tilt from 'react-parallax-tilt';
 import homeLogo from '../../assets/home-logo.svg';
 import '../../CSS/glitch.css';
 import '../../CSS/stars.css';
@@ -36,7 +37,7 @@ const Home = () => {
             </Col>
 
             <Col className='home-col'>
-              <img src={homeLogo} alt="logo" className="home-logo" style={{maxHeight: "500px"}} />
+              <Tilt><img src={homeLogo} alt="logo" className="home-logo" style={{maxHeight: "500px"}} /></Tilt>
             </Col>
             
           </Row>
