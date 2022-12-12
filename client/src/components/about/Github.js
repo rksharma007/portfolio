@@ -5,7 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 
 const Github = () => {
 return (
-    <Row style={{ marginTop:"20px", justifyContent: "center", paddingBottom: "10px"}} >
+    <Row style={{ marginTop:"20px", justifyContent: "center", paddingBottom: "20px"}} >
       <GitHubCalendar
         className="commitCalendar"
         username="rksharma007"

@@ -1,11 +1,11 @@
 const StarBg = () => {
 return (
 <div>
-    <div class="bg"></div>
-    <div class="star-field">
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>
+    <div className="bg"></div>
+    <div className="star-field">
+        <div className="layer"></div>
+        <div className="layer"></div>
+        <div className="layer"></div>
     </div>
 </div>
 )};

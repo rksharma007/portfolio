@@ -4,7 +4,15 @@
   --my-tertiary-color: rgb(0, 255, 251);
   --my-light-color: rgb(255, 255, 255);
   --my-dark-color: rgb(68, 68, 68);
+  --skills-globe-radius: 150;
 }
+
+@media (max-width: 767px) {
+  :root {
+    --skills-globe-radius: 100;
+  }
+}
+
 
 html {
     --section-background-color: linear-gradient(
@@ -491,6 +499,13 @@ html {
     font-size: 1.2em !important;
     text-align: left;
   }
+
+  @media (max-width: 767px) {
+    .home-about-body {
+      font-size: 1rem !important;
+      text-align:justify;
+    }
+  }
   
   .home-about-social {
     text-align: center !important;
@@ -573,6 +588,12 @@ html {
     z-index: 2;
   }
 
+  .about-description {
+    color: white !important;
+    /* padding-top: 100px !important; */
+    padding-bottom: 20px !important;
+    text-align: center;
+  }
   
   /* --------- */
   /* Footer */
@@ -745,6 +766,12 @@ html {
     padding-top: 20px;
     font-size: 1.2rem !important;
     text-align:justify;
+  }
+
+  @media (max-width: 767px) {
+    .about-body {
+      font-size: 1rem !important;
+    }
   }
   
   .tech-icons {
@@ -1024,5 +1051,28 @@ html {
   .leetcodestat{
     max-width: 300px;
     padding-bottom: 20px;
+  }
+}
+
+.tagcloud {
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+@media (max-width: 993px) {
+  .tagcloud {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tagcloud {
+    /* width: 150px;
+    height: 150px; */
+    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-left: -50px;
   }
 }
