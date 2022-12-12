@@ -16,7 +16,7 @@ const PreLoader = (props) => {
 
     {/* <div id={props.load ? "preloader" : "preloader-none"}> </div> */}
     <section className="spinner-bg">
-      <div class="spinner">
+      <div className="spinner">
         <div></div>
         <div></div>
         <div></div>

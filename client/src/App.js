@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Navigate } from 'react-router-dom';
 import './CSS/App.css';
 import './CSS/style.css';
 
+import About from './components/about/About';
 import Home from './components/home/Home';
 import Footer from './components/layout/Footer';
 import NavbarMain from './components/layout/NavbarMain';
@@ -28,6 +29,7 @@ const App = () => {
         <NavbarMain />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

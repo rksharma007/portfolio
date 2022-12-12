@@ -8,20 +8,16 @@ import myImg from '../../assets/export2.png';
 const Home2 = () => {
   
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section" id="">
       <Container>
         <Row>
-          <h1 style={{ fontSize: "2.4rem" }}>
+          <h1 className="project-heading">
             LET ME <span className="highlight"> INTRODUCE </span> MYSELF
           </h1>
         </Row>
         <Row>
-        <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{maxHeight:"350px"}}/>
-            </Tilt>
-          </Col>
-          <Col md={8} className="home-about-description">
+
+          <Col md={6} className="home-about-description">
             <p className="home-about-body">
               I fell in love with programming, and I have at least learnt something, I think… 🤷‍♂️
               <br />
@@ -40,19 +36,13 @@ const Home2 = () => {
                 </b>
               <br />
               <br />
-              I also apply my passion for developing products with
-              <b className="highlight"> <i>Node.js</i></b> and
-              <i>
-                <b className="highlight">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              
-                <b className="highlight"> <i>React.js</i></b>  and <b className='highlight'><i> Next.js</i></b>
-              
             </p>
+          </Col>
+          <Col md={2}></Col>
+          <Col md={4} className="myAvtar">
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" style={{maxHeight:"350px"}}/>
+            </Tilt>
           </Col>
         </Row>
         <Row>
