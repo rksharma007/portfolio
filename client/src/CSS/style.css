@@ -827,11 +827,15 @@ html {
   /* Resume */
   /* --------- */
   
+  .react-pdf__Page__textContent  {
+    display: none;
+  }
+
   .resume-section {
     position: relative !important;
     padding-top: 110px !important;
     padding-bottom: 30px !important;
-    background-image: var(--section-background-color) !important;
+    /* background-image: var(--section-background-color) !important; */
     color: white !important;
   }
   
@@ -843,6 +847,52 @@ html {
   
   .resume-left {
     padding-right: 80px !important;
+  }
+
+  .resume-section-download i{
+    content: "";
+    position: relative;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+    color: white;
+    border-color: var(--my-tertiary-color);
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+  }
+
+  .resume-section-download i:hover::after{
+    content: "";
+    position: relative;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+    color: white;
+    padding: 5px;
+  }
+
+  .resume-section-download a::after {
+    content: "";
+    max-width: 200px;
+    position: relative;
+    display: block;
+    height: 30px;
+    margin-top: -29px;
+    padding-left: -2px;
+    width: 0;
+    background: var(--my-tertiary-color);
+    /* box-shadow: 0px 3px 4px #02fbff; */
+    border-color: var(--my-tertiary-color);
+    border-radius: 5px;
+    left: 0;
+    z-index: -2;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .resume-section-download a:hover::after {
+    width: 100%;
+    background: var(--my-primary-color);
+    color: white;
+    text-decoration: none;
   }
   
   .resume-right {
@@ -870,7 +920,7 @@ html {
   .resume .resume-item {
     padding: 0 0 10px 25px;
     margin-top: -2px;
-    border-left: 2px solid #8a49a8;
+    border-left: 2px solid var(--my-tertiary-color);
     position: relative;
   }
   
