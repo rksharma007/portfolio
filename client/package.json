@@ -17,6 +17,7 @@
     "react-github-calendar": "^3.3.4",
     "react-icons": "^4.7.1",
     "react-parallax-tilt": "^1.7.76",
+    "react-pdf": "^6.2.0",
     "react-router": "^6.4.3",
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
