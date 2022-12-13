@@ -31,7 +31,7 @@ const Resume = () => {
       <Container fluid className="resume-section">
         <StarBg />
         <Row style={{ justifyContent: "center", position: "relative" }}  className="resume-section-download">
-          <a href={pdf} target="_blank" rel="noreferrer" style={{maxWidth:"200px"}}>
+          <a href={pdf} target="_blank" rel="noreferrer" style={{maxWidth:"250px"}}>
             <i style={{color: "white"}} className="fa fa-download" >&nbsp;Download CV</i>
           </a>
         </Row>

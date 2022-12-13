@@ -6,6 +6,7 @@ import './CSS/App.css';
 import './CSS/style.css';
 
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
 import Home from './components/home/Home';
 import Footer from './components/layout/Footer';
 import NavbarMain from './components/layout/NavbarMain';
@@ -26,12 +27,14 @@ const App = () => {
     <Router>
       {/* <PreLoader load={load} /> */}
       {load && <PreLoader/>}
+      <NavbarMain />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <NavbarMain />
+        
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/resume' element={<Resume />} />
+          <Route path='/contact' element={<Contact/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         

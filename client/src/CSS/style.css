@@ -858,7 +858,9 @@ html {
     border-color: var(--my-tertiary-color);
     border-radius: 5px;
     border-style: solid;
-    padding: 5px;
+    border-width: 2px;
+    padding: 10px;
+    font-size: .8rem;
   }
 
   .resume-section-download i:hover::after{
@@ -867,7 +869,7 @@ html {
     z-index: -1;
     transition: all 0.3s ease-out 0s;
     color: white;
-    padding: 5px;
+    padding: 10px;
   }
 
   .resume-section-download a::after {
@@ -875,21 +877,21 @@ html {
     max-width: 200px;
     position: relative;
     display: block;
-    height: 30px;
-    margin-top: -29px;
+    height: 33px;
+    margin-top: -33px;
     padding-left: -2px;
     width: 0;
     background: var(--my-tertiary-color);
     /* box-shadow: 0px 3px 4px #02fbff; */
     border-color: var(--my-tertiary-color);
     border-radius: 5px;
-    left: 0;
+    left: 39px;
     z-index: -2;
     transition: all 0.3s ease-out 0s;
   }
   
   .resume-section-download a:hover::after {
-    width: 100%;
+    width: 66%;
     background: var(--my-primary-color);
     color: white;
     text-decoration: none;
@@ -1125,4 +1127,39 @@ html {
     margin-top: 0px;
     margin-left: -50px;
   }
+}
+
+.contact-content {
+  position: relative;
+  padding: 9rem 0 2rem !important;
+  color: whitesmoke;
+  z-index: 2;
+}
+
+.contact-description {
+  color: white !important;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  padding-top: 70px !important;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    padding-top: 20px !important;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .contact-description {
+    color: white !important;
+    padding: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+  }  
 }
