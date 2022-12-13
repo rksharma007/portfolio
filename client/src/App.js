@@ -11,6 +11,7 @@ import Home from './components/home/Home';
 import Footer from './components/layout/Footer';
 import NavbarMain from './components/layout/NavbarMain';
 import PreLoader from './components/layout/PreLoader';
+import Project from './components/projects/Project';
 import Resume from './components/resume/Resume';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/project' element={<Project />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/contact' element={<Contact/>} />
           <Route path="*" element={<Navigate to="/"/>} />

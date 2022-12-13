@@ -34,30 +34,27 @@ const Contact = () => {
                             <ValidationError prefix="Message" field="message" errors={state.errors}/>
                         </Row>
                         <Row>
-                            <Col md={8}>
-                            {state.succeeded && <b className='highlight'>Thanks! Will get back to you soon!</b>}
+                            <Col md={8} xs={8} style={{marginTop: "30px", fontSize: "1.7rem"}} align="left">
+                                <a href="https://facebook.com/ravikantsharma07" target="_blank" rel="noreferrer"  >
+                                    <i className="fa-brands fa-facebook" />
+                                </a>&nbsp;&nbsp;
+                                <a href="https://www.instagram.com/rksharma3837" target="_blank" rel="noreferrer" >
+                                    <i className="fa-brands fa-instagram" />
+                                </a>&nbsp;&nbsp;
+                                <a href="https://www.linkedin.com/in/ravi-kant-sharma-a37924200/" target="_blank" rel="noreferrer"  >
+                                    <i className="fa-brands fa-linkedin" />
+                                </a>
                             </Col>
-                            <Col md={4}>
-                                <input type="submit" disabled={state.submitting} className="btn btn-outline-info" value="Submit"  style={{marginTop: "30px"}}/>
+                            <Col md={4} xs={4} align="right">
+                                <input type="submit" disabled={state.submitting} className="btn btn-outline-info" value="Submit" style={{marginTop: "30px"}}/>
                             </Col>
+                        </Row>
+                        <Row>
+                            {state.succeeded && <><b className='highlight' style={{fontWeight: "400"}}>Thanks! Will get back to you soon!</b></>}
                         </Row>
                     </form>
                 </Col>
                 <Col md={7} className="contact-description"> 
-                    {/* <Row>
-                        <Col md={9}>
-                            <Row></Row>
-                            <div className="about-body">
-                                I'm a passionate programmer, who is always looking for new challenges to improve myself,
-                                also a team player, who is always ready to learn new things and help others.
-                                <br /><br />
-                                My field of interest is building new&nbsp;
-                                <b className="highlight"><i>Web Technologies and Products </i></b> and also in areas related to{" "}
-                                <b className="highlight"><i>Deep Learning and Natural Launguage Processing.</i></b>
-                                <br /><br />
-                            </div>
-                        </Col>
-                    </Row> */}
                     <Tilt><img src={logo} alt="logo" className="contact-logo" style={{maxHeight: "400px"}} /></Tilt>
                 </Col>
             </Row>

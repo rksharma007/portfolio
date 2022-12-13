@@ -497,13 +497,13 @@ html {
   .home-about-body {
     padding-top: 50px;
     font-size: 1.2em !important;
-    text-align: left;
+    text-align: justify;
   }
 
   @media (max-width: 767px) {
     .home-about-body {
       font-size: 1rem !important;
-      text-align:justify;
+      text-align: justify;
     }
   }
   
@@ -574,7 +574,7 @@ html {
     color: #700c86 !important;
   }
 
-    /* --------- */
+  /* --------- */
   /* About */
   /* --------- */
   .about {
@@ -595,6 +595,42 @@ html {
     text-align: center;
   }
   
+
+  /* --------- */
+  /* Project */
+  /* --------- */
+  .project {
+    color: white;
+  }
+
+  .project-content {
+    position: relative;
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    z-index: 2;
+  }
+
+  .project-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+  }
+  .project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(0, 255, 251, 0.5) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+  }
+  .project-card-view:hover {
+    transform: scale(1.04) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(0, 255, 251, 0.7) !important;
+  }
+
   /* --------- */
   /* Footer */
   /* --------- */
@@ -650,11 +686,10 @@ html {
   /* --------- */
   /* Projects */
   /* --------- */
-  .project-section {
+  /* .project-section {
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
-    background-image: var(--section-background-color) !important;
   }
   
   .project-card {
@@ -677,7 +712,7 @@ html {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-  }
+  } */
   
   .blog-card {
     padding-top: 50px !important;
@@ -765,12 +800,15 @@ html {
   .about-body {
     padding-top: 20px;
     font-size: 1.2rem !important;
-    text-align:justify;
+    text-align: justify;
   }
 
   @media (max-width: 767px) {
     .about-body {
       font-size: 1rem !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      text-align: justify;
     }
   }
   
@@ -1149,6 +1187,16 @@ html {
   margin-bottom: 10px;
 }
 
+.contact-form i{
+  color: white;
+}
+
+.contact-form i:hover{
+  color: var(--my-tertiary-color);
+  transition: 0.2s ease-in-out;
+}
+
+
 @media (max-width: 767px) {
   .contact-form {
     padding-top: 20px !important;
@@ -1161,5 +1209,5 @@ html {
     padding-bottom: 0px;
     text-align: center;
     margin-bottom: 10px;
-  }  
+  } 
 }
