@@ -6,7 +6,6 @@
 
  
  - Portfolio is a web application based on React. 
- - This project was started at 11 P.M. on 26th November 2022.
  
  **TECHNOLOGIES :-**
 

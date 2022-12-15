@@ -34,10 +34,11 @@ const About = () => {
                     I'm a passionate programmer, who is always looking for new challenges to improve myself,
                     also a team player, who is always ready to learn new things and help others.
                     <br /><br />
-                    My field of interest is building new&nbsp;
-                    <b className="highlight"><i>Web Technologies and Products </i></b> and also in areas related to{" "}
-                    <b className="highlight"><i>Deep Learning and Natural Launguage Processing.</i></b>
+                    Currently pursuing Bachelor of Technology - B.Tech focused in Software Engineering from Delhi Technological University (Formerly DCE).&nbsp;
                     <br /><br />
+                    Completed two<b className="highlight"><i> Web Development Internships </i></b>
+                    and worked on several{" "}
+                    <b className="highlight"><i>Freelancing Projects.</i></b>
                   </div>
                 </Col>
               </Row>

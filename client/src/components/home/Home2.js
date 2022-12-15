@@ -19,23 +19,16 @@ const Home2 = () => {
 
           <Col md={6} className="home-about-description">
             <p className="home-about-body">
-              I fell in love with programming, and I have at least learnt something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="highlight"> C++, Javascript and Python. </b>
-              </i>
-              <br />
-              <br />
+              I am an ingenious and determined programming enthusiast, learning and enhancing my skills everyday.
+              <br /><br />
+              I am fluent in classics like
+              <i><b className="highlight"> C++, Javascript and Python. </b></i>
+              <br /><br />
               My field of interest is building new &nbsp;
-              
                 <b className="highlight"><i>Web Technologies and Products </i></b> and
-                also in areas related to{" "}
-                <b className="highlight">
-                  <i>Deep Learning and Natural Launguage Processing.</i>
-                </b>
-              <br />
-              <br />
+                also have a keen interest in{" "}
+                <b className="highlight"><i>Machine Learning and Computer Vision.</i></b>
+              <br /><br />
             </p>
           </Col>
           <Col md={2}></Col>

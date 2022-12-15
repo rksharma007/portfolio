@@ -32,7 +32,7 @@ const Home = () => {
                       strings: [
                         "FULL STACK DEVELOPER",
                         "MERN STACK DEVELOPER",
-                        "PROBLEM SOLVING",
+                        "TECH ENTHUSIAST",
                       ],
                       autoStart: true,
                       loop: true,

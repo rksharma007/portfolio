@@ -25,7 +25,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router onUpdate={() => window.scrollTo(0, 0)}>
       {/* <PreLoader load={load} /> */}
       {load && <PreLoader/>}
       <NavbarMain />

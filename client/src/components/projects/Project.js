@@ -2,8 +2,12 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import dtuhostel from '../../assets/projects/dtuhostel.png';
+import facemask from '../../assets/projects/facemask.png';
+import gharbar from '../../assets/projects/gharbar.png';
 import iqac from '../../assets/projects/iqac.png';
 import portfolio from '../../assets/projects/portfolio.png';
+import taskifier from '../../assets/projects/taskifier.png';
 import '../../CSS/stars.css';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
@@ -22,31 +26,56 @@ const Project = () => {
                     imgPath={portfolio}
                     isBlog={false}
                     title="Portfolio"
-                    description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-                    ghLink="https://github.com/soumyajit4419/Chatify"
-                    demoLink="https://chatify-49.web.app/"
+                    stack="React, Bootstrap"
+                    description= "My portfolio. Built using ReactJs, CSS3, Bootstrap5 and lots of ❤️ love."
+                    ghLink="https://github.com/rksharma007/portfolio"
+                    demoLink="https://rksharma.tech/"
                     />
                 </Col>
 
                 <Col md={4} className="project-card">
                     <ProjectCard
-                    imgPath={portfolio}
+                    imgPath={gharbar}
                     isBlog={false}
-                    title="Bits-0f-C0de"
-                    description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-                    ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-                    demoLink="https://blogs.soumya-jit.tech/"
+                    title="GharBar"
+                    stack="MERN, Redux, Razorpay"
+                    description="Ghar-Bar is an authenticated, user-friendly hotel & bar booking website based on the MERN Stack and uses Redux for state management. The website is integrated with Razorpay API for payments."
+                    demoLink="https://gharbar.netlify.app/"
                     />
                 </Col>
 
                 <Col md={4} className="project-card">
                     <ProjectCard
-                    imgPath={portfolio}
+                    imgPath={dtuhostel}
                     isBlog={false}
-                    title="Editor.io"
-                    description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-                    ghLink="https://github.com/soumyajit4419/Editor.io"
-                    demoLink="https://editor.soumya-jit.tech/"              
+                    title="DTU Hostels"
+                    stack="MERN, Redux, Razorpay"
+                    description="DTU-Hostels is an authenticated, user-friendly hostel management website based on the MERN Stack and Redux.
+                    Students and Admins can manage all their hostel activities like applications, complaints, mess, payments and notices."
+                    demoLink="https://dtuhostel.netlify.app/"           
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={taskifier}
+                    isBlog={false}
+                    title="Taskifier"
+                    stack="MERN, Redux, MUI"
+                    description="Taskifier is a web-based authenticated task manager based on the MERN Stack, powered with Redux and deployed using Render and Netlify. Multiple users can log in simultaneously to the user-friendly UI and manage their daily tasks."
+                    ghLink="https://github.com/rksharma007/taskifier-mern-stack"
+                    demoLink="https://taskifier.netlify.app/"
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={facemask}
+                    isBlog={false}
+                    title="Face Mask Door Lock"
+                    stack="Python, OpenCV, Raspberry, ML"
+                    description="Using Computer Vision for the face mask detection to facilitate automatic door opening and closing system that can be implemented over Raspberry PI and Stepper Motor."
+                    ghLink="https://github.com/rksharma007/Face_Mask_Detection_Based_Door_Lock"
                     />
                 </Col>
 
@@ -54,21 +83,11 @@ const Project = () => {
                     <ProjectCard
                     imgPath={iqac}
                     isBlog={false}
-                    title="IQAC"
-                    description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-                    ghLink="https://github.com/soumyajit4419/Plant_AI"
-                    demoLink="https://plant49-ai.herokuapp.com/"
-                    />
-                </Col>
-
-                <Col md={4} className="project-card">
-                    <ProjectCard
-                    imgPath={iqac}
-                    isBlog={false}
-                    title="IQAC"
-                    description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-                    ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-                    // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+                    title="IQAC DTU"
+                    stack="HTML, CSS, JavaScript, Bootstrap"
+                    description="IQAC DTU is a website based on HTML5, CSS3, JavaScript and Bootstrap5 for my University's Internal Quality Assurance Cell. It is facilitated using AOS library for smooth scrolling animations."
+                    // ghLink="https://github.com/rksharma007/rk-iqac-website"
+                    demoLink="https://dtuiqacdemo.netlify.app/"
                     />
                 </Col>
             </Row>
