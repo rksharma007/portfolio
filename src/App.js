@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router';
-import { BrowserRouter as Router, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import './CSS/App.css';
 import './CSS/style.css';
@@ -37,7 +37,7 @@ const App = () => {
           <Route path='/project' element={<Project />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='*' element={<Navigate to='/'/>} />
+          {/* <Route path='*' element={<Navigate to='/'/>} /> */}
         </Routes>
         
       </div>
