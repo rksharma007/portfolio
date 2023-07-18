@@ -45,7 +45,7 @@ const NavbarMain = () => {
 
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <i className="fa-light fa-home" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Home
+                <i className="fa fa-home" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -55,7 +55,7 @@ const NavbarMain = () => {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="fa-light fa-user" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> About
+                <i className="fa fa-user" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +65,7 @@ const NavbarMain = () => {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="fa-light fa-folder" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)' }}/>{" "}Projects
+                <i className="fa fa-folder" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)' }}/>{" "}Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -75,7 +75,7 @@ const NavbarMain = () => {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="fa-light fa-file-user" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Resume
+                <i className="fa fa-file" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -85,7 +85,7 @@ const NavbarMain = () => {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="fa-light fa-message-code" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Contact
+                <i className="fa-regular envelope" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Contact
               </Nav.Link>
             </Nav.Item>
 
