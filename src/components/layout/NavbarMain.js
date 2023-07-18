@@ -85,7 +85,7 @@ const NavbarMain = () => {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <i className="fa-regular fa-envelope" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Contact
+                <i className="fa-solid fa-envelope" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)'}} /> Contact
               </Nav.Link>
             </Nav.Item>
 
