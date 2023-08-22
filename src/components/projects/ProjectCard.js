@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
       )}
         {!props.isBlog && props.demoLink && (
           <Button variant="outline-info" href={props.demoLink} target="_blank" style={{marginLeft: "10px", marginBottom: "15px"}}>
-            <i className="fa-light fa-browser" /> &nbsp; {"Demo"}
+            <i className="fa-regular fa-eye" /> &nbsp; {"Demo"}
           </Button>
         )}
       </Card.Footer>

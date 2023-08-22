@@ -2,13 +2,15 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import '../../CSS/stars.css';
+import astrovajra from '../../assets/projects/astrovajra.png';
 import dtuhostel from '../../assets/projects/dtuhostel.png';
 import facemask from '../../assets/projects/facemask.png';
 import gharbar from '../../assets/projects/gharbar.png';
 import iqac from '../../assets/projects/iqac.png';
 import portfolio from '../../assets/projects/portfolio.png';
+import quickreel from '../../assets/projects/quickreel.png';
 import taskifier from '../../assets/projects/taskifier.png';
-import '../../CSS/stars.css';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
@@ -21,6 +23,28 @@ const Project = () => {
                 My Recent <b className="highlight"> Works </b>
             </h1>
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={astrovajra}
+                    isBlog={false}
+                    title="AstroVajra"
+                    stack="MERN, Hooks, GraphQL, MUI"
+                    description= "A space shooter game utilizing its scenes from 1979 Atari game Asteroids; incorporated with different difficulty levels and global leaderboard for competitive advantage."
+                    demoLink="https://astrovajra.onrender.com/"
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={quickreel}
+                    isBlog={false}
+                    title="Quickreel"
+                    stack="MERN, Redux, Framer, Stripe, AWS"
+                    description= "An AI-powered platform for creators to transform their podcasts into logical short clips automatically. Create engaging and high quality clips from your podcast with one click."
+                    demoLink="https://quickreel.io/"
+                    />
+                </Col>
+
                 <Col md={4} className="project-card">
                     <ProjectCard
                     imgPath={portfolio}
