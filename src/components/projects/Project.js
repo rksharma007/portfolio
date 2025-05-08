@@ -23,6 +23,19 @@ const Project = () => {
                 My Recent <b className="highlight"> Works </b>
             </h1>
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={exceltoppt}
+                    isBlog={false}
+                    title="Excel to PPT"
+                    stack="Flask, Python, Matplotlib, Pandas"
+                    description= "Upload an excel, get a PPT with tables and charts within few seconds."
+                    demoLink="https://excel-to-ppt.onrender.com/"
+                    ghLink="https://github.com/rksharma007/Excel-to-PPT"
+                    />
+                </Col>
+                      
                 <Col md={4} className="project-card">
                     <ProjectCard
                     imgPath={astrovajra}
