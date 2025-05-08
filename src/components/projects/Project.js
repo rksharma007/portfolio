@@ -11,6 +11,7 @@ import iqac from '../../assets/projects/iqac.png';
 import portfolio from '../../assets/projects/portfolio.png';
 import quickreel from '../../assets/projects/quickreel.png';
 import taskifier from '../../assets/projects/taskifier.png';
+import exceltoppt from '../../assets/projects/exceltoppt.png';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
