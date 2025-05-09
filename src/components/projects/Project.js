@@ -12,6 +12,7 @@ import portfolio from '../../assets/projects/portfolio.png';
 import quickreel from '../../assets/projects/quickreel.png';
 import taskifier from '../../assets/projects/taskifier.png';
 import exceltoppt from '../../assets/projects/exceltoppt.png';
+import fanfinity from '../../assets/projects/fanfinity.png';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
@@ -24,6 +25,17 @@ const Project = () => {
                 My Recent <b className="highlight"> Works </b>
             </h1>
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={fanfinity}
+                    isBlog={false}
+                    title="FanFinity"
+                    stack="Python, OpenCV, MobileNet SSD"
+                    description= "Multi-matrix fan automation system based on human detection in marked areas."
+                    ghLink="https://github.com/rksharma007/FanFinity"
+                    />
+                </Col>
 
                 <Col md={4} className="project-card">
                     <ProjectCard
