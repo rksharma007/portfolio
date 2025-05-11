@@ -1,3 +1,5 @@
+import '../../CSS/stars.css';
+
 const StarBg = () => {
 return (
 <div>

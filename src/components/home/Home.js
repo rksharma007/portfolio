@@ -1,21 +1,20 @@
-import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Tilt from 'react-parallax-tilt';
 import Typewriter from 'typewriter-effect';
 import homeLogo from '../../assets/home-logo.svg';
 import '../../CSS/glitch.css';
-import '../../CSS/stars.css';
 import StarBg from '../layout/StarBg';
 import Home2 from './Home2';
 
 const Home = () => {
+
   return (
     <section className="container" >
       <div id="home">
 
-      <StarBg/>
-        
+        <StarBg/>
+
         <div className="container home-content">
           <Row className='home-row'>
 

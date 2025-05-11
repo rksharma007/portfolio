@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -66,6 +66,16 @@ const NavbarMain = () => {
                 onClick={() => updateExpanded(false)}
               >
                 <i className="fa fa-folder" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)' }}/>{" "}Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/illustration"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fa fa-paint-brush" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)' }}/>{" "}Illustrations
               </Nav.Link>
             </Nav.Item>
 

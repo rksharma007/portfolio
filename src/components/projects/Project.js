@@ -1,18 +1,17 @@
-import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import '../../CSS/stars.css';
 import astrovajra from '../../assets/projects/astrovajra.png';
 import dtuhostel from '../../assets/projects/dtuhostel.png';
+import exceltoppt from '../../assets/projects/exceltoppt.png';
 import facemask from '../../assets/projects/facemask.png';
+import fanfinity from '../../assets/projects/fanfinity.png';
 import gharbar from '../../assets/projects/gharbar.png';
 import iqac from '../../assets/projects/iqac.png';
 import portfolio from '../../assets/projects/portfolio.png';
 import quickreel from '../../assets/projects/quickreel.png';
 import taskifier from '../../assets/projects/taskifier.png';
-import exceltoppt from '../../assets/projects/exceltoppt.png';
-import fanfinity from '../../assets/projects/fanfinity.png';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
