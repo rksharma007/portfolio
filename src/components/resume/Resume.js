@@ -17,7 +17,7 @@ function removeTextLayerOffset() {
   }
   
 const resumeLink =
-  "https://raw.githubusercontent.com/rksharma007/rksharma007/main/RESUME%20Ravi_Kant_Sharma.pdf";
+  "https://raw.githubusercontent.com/rksharma007/portfolio/main/src/assets/RESUME.pdf";
 
 const Resume = () => {
   const [width, setWidth] = useState(1200);
