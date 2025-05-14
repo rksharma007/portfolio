@@ -12,6 +12,7 @@ import iqac from '../../assets/projects/iqac.png';
 import portfolio from '../../assets/projects/portfolio.png';
 import quickreel from '../../assets/projects/quickreel.png';
 import taskifier from '../../assets/projects/taskifier.png';
+import esp32home from '../../assets/projects/esp32home.png';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
@@ -31,7 +32,7 @@ const Project = () => {
                     isBlog={false}
                     title="FanFinity"
                     stack="Python, OpenCV, MobileNet SSD"
-                    description= "Multi-matrix fan automation system based on human detection in marked areas."
+                    description= "Multi-matrix fan automation system based on human detection in marked areas. Just mark the areas covered by different fans and let the app handle the rest."
                     ghLink="https://github.com/rksharma007/FanFinity"
                     />
                 </Col>
@@ -42,7 +43,7 @@ const Project = () => {
                     isBlog={false}
                     title="Excel to PPT"
                     stack="Flask, Python, Matplotlib, Pandas"
-                    description= "Upload an excel, get a PPT with tables and charts within few seconds."
+                    description= "Upload an excel, get a PPT with tables and charts within few seconds. Excellent for visualising online Forms response excel sheets."
                     demoLink="https://excel-to-ppt.onrender.com/"
                     ghLink="https://github.com/rksharma007/Excel-to-PPT"
                     />
@@ -114,6 +115,17 @@ const Project = () => {
                     description="Taskifier is a web-based authenticated task manager based on the MERN Stack, powered with Redux and deployed using Render and Netlify. Multiple users can log in simultaneously to the user-friendly UI and manage their daily tasks."
                     ghLink="https://github.com/rksharma007/taskifier-mern-stack"
                     demoLink="https://taskifier.netlify.app/"
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={esp32home}
+                    isBlog={false}
+                    title="ESP32 Home Automation"
+                    stack="ESP32, IFTTT, Webhooks, Blynk"
+                    description="Control appliances wirelessly using custom voice commands from anywhere in the world; using ESP32 microcontroller, Blynk, Webhooks, IFTTT and Voice Assistant."
+                    ghLink="https://github.com/rksharma007/ESP32_Based_Google_Home_Assistant"
                     />
                 </Col>
 
