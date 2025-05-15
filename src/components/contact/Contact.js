@@ -46,7 +46,7 @@ const Contact = () => {
                                 </a>
                             </Col>
                             <Col md={4} xs={4} align="right">
-                                <input type="submit" disabled={state.submitting} className="btn btn-outline-info" value="Submit" style={{marginTop: "30px"}}/>
+                                <input type="submit" disabled={state.submitting} className="btn btn-outline-info" value={state.submitting?"Sending...":"Submit"} style={{marginTop: "30px"}}/>
                             </Col>
                         </Row>
                         <Row>

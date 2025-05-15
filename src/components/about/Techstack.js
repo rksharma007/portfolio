@@ -2,29 +2,35 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { AiFillHtml5 } from "react-icons/ai";
-import { DiGit, DiJavascript, DiPython, DiReact } from "react-icons/di";
+import { DiJava, DiGit, DiJavascript, DiPython, DiReact } from "react-icons/di";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
-import { SiCplusplus, SiExpress, SiIfttt, SiMongodb, SiMysql, SiOpencv, SiRedux } from "react-icons/si";
+import { SiApachecassandra, SiPostgresql, SiCouchbase, SiApachekafka, SiSpring, SiCplusplus, SiExpress, SiIfttt, SiMongodb, SiMysql, SiOpencv, SiRedux } from "react-icons/si";
 import { TbWebhook } from "react-icons/tb";
 
 const Techstack = () => {
 return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Col xs={1} md={2} className="tech-icons"><SiCplusplus /></Col>
-        <Col xs={1} md={2} className="tech-icons"><DiPython /></Col>
-        <Col xs={1} md={2} className="tech-icons"><AiFillHtml5 /></Col>
-        <Col xs={1} md={2} className="tech-icons"><IoLogoCss3 /></Col>
-        <Col xs={1} md={2} className="tech-icons"><DiJavascript /></Col>
-        <Col xs={1} md={2} className="tech-icons"><SiMongodb /></Col>
-        <Col xs={1} md={2} className="tech-icons"><SiExpress /></Col>
-        <Col xs={1} md={2} className="tech-icons"><DiReact /></Col>
-        <Col xs={1} md={2} className="tech-icons"><IoLogoNodejs /></Col>
-        <Col xs={1} md={2} className="tech-icons"><SiRedux /></Col>
-        <Col xs={1} md={2} className="tech-icons"><DiGit /></Col>
-        <Col xs={1} md={2} className="tech-icons"><SiMysql /></Col>
-        <Col xs={1} md={2} className="tech-icons"><SiIfttt /></Col>
-        <Col xs={1} md={2} className="tech-icons"><TbWebhook /></Col>
-        <Col xs={1} md={2} className="tech-icons"><SiOpencv /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="C++"><SiCplusplus /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Python"><DiPython /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Java"><DiJava /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Spring"><SiSpring /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Apache Kafka"><SiApachekafka /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Couchbase"><SiCouchbase /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="PostgreSQL"><SiPostgresql /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Apache Cassandra"><SiApachecassandra /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="HTML5"><AiFillHtml5 /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="CSS3"><IoLogoCss3 /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="JavaScript"><DiJavascript /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="MongoDB"><SiMongodb /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Express.js"><SiExpress /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="React"><DiReact /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Node.js"><IoLogoNodejs /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Redux"><SiRedux /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Git"><DiGit /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="MySQL"><SiMysql /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="IFTTT"><SiIfttt /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="Webhooks"><TbWebhook /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="OpenCV"><SiOpencv /></Col>
     </Row>
 )};
     
