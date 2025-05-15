@@ -22,12 +22,12 @@ const Home2 = () => {
               I am an ingenious and determined programming enthusiast, learning and enhancing my skills everyday.
               <br /><br />
               I am fluent in classics like
-              <i><b className="highlight"> C++, Javascript and Python. </b></i>
+              <i><b className="highlight"> C++, Javascript, Python and Java. </b></i>
               <br /><br />
               My field of interest is building new &nbsp;
                 <b className="highlight"><i>Web Technologies and Products </i></b> and
                 also have a keen interest in{" "}
-                <b className="highlight"><i>Machine Learning and Computer Vision.</i></b>
+                <b className="highlight"><i>Machine Learning, Computer Vision and IoT.</i></b>
               <br /><br />
             </p>
           </Col>
