@@ -3,13 +3,14 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { SiArduino, SiRaspberrypi, SiKubernetes, SiPycharm, SiDbeaver, SiDocker, SiIntellijidea, SiAdobeillustrator, SiGithub, SiHeroku, SiLinux, SiNetlify, SiPostman, SiVercel, SiVisualstudiocode } from "react-icons/si";
 import { DiOpenshift } from "react-icons/di";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 const Toolstack = () => {
 return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={1} md={2} className="tech-icons" title="GitHub"><SiGithub /></Col>
         <Col xs={1} md={2} className="tech-icons" title="Linux"><SiLinux /></Col>
-        <Col xs={1} md={2} className="tech-icons" title="VS Code"><SiVisualstudiocode /></Col>
+        <Col xs={1} md={2} className="tech-icons" title="VS Code"><BiLogoVisualStudio /></Col>
         <Col xs={1} md={2} className="tech-icons" title="IntelliJ IDEA"><SiIntellijidea /></Col>
         <Col xs={1} md={2} className="tech-icons" title="PyCharm"><SiPycharm /></Col>
         <Col xs={1} md={2} className="tech-icons" title="Docker"><SiDocker /></Col>
