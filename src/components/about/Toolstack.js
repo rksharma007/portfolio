@@ -1,7 +1,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { SiArduino, SiRaspberrypi, SiKubernetes, SiPycharm, SiDbeaver, SiDocker, SiIntellijidea, SiAdobeillustrator, SiGithub, SiHeroku, SiLinux, SiNetlify, SiPostman, SiVercel, SiVisualstudiocode } from "react-icons/si";
+import { SiArduino, SiRaspberrypi, SiKubernetes, SiPycharm, SiDbeaver, SiDocker, SiIntellijidea, SiAdobeillustrator, SiGithub, SiHeroku, SiLinux, SiNetlify, SiPostman, SiVercel } from "react-icons/si";
 import { DiOpenshift } from "react-icons/di";
 import { BiLogoVisualStudio } from "react-icons/bi";
 
