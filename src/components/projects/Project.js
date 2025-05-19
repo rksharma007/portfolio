@@ -13,6 +13,8 @@ import portfolio from '../../assets/projects/portfolio.png';
 import quickreel from '../../assets/projects/quickreel.png';
 import taskifier from '../../assets/projects/taskifier.png';
 import esp32home from '../../assets/projects/esp32home.png';
+import bharatrescue from '../../assets/projects/bharatrescue.png';
+import treeweaver from '../../assets/projects/treeweaver.png';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
@@ -25,6 +27,17 @@ const Project = () => {
                 My Recent <b className="highlight"> Works </b>
             </h1>
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={treeweaver}
+                    isBlog={false}
+                    title="TreeWeaver"
+                    stack="NEXTjs, Tailwind CSS, ShadCN UI, html2canvas"
+                    description= "TreeWeaver is your digital canvas for creating, customizing, and sharing beautiful (or beautifully chaotic) family histories. If you thought your family tree was complicated, just wait until you try to build it here!"
+                    demoLink="https://treeweaver.onrender.com/"
+                    />
+                </Col>
 
                 <Col md={4} className="project-card">
                     <ProjectCard
@@ -46,6 +59,17 @@ const Project = () => {
                     description= "Upload an excel, get a PPT with tables and charts within few seconds. Excellent for visualising online Forms response excel sheets."
                     demoLink="https://excel-to-ppt.onrender.com/"
                     ghLink="https://github.com/rksharma007/Excel-to-PPT"
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={bharatrescue}
+                    isBlog={false}
+                    title="BharatRescue"
+                    stack="MERN, Filebase IPFS, Docker, Azure Cloud"
+                    description= "A centralized disaster response force system consisting of admin and staffs for different rescue centers. Locate nearest centers, Coordination among centers, Save-search rescued people, Inform nearby NCC cadets, Show alert for disasters."
+                    demoLink="https://bharatrescue-admin.netlify.app/"
                     />
                 </Col>
                       
