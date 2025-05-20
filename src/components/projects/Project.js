@@ -35,6 +35,7 @@ const Project = () => {
                     title="TreeWeaver"
                     stack="NEXTjs, Tailwind CSS, ShadCN UI, html2canvas"
                     description= "TreeWeaver is your digital canvas for creating, customizing, and sharing beautiful (or beautifully chaotic) family histories. If you thought your family tree was complicated, just wait until you try to build it here!"
+                    ghLink="https://github.com/rksharma007/TreeWeaver"
                     demoLink="https://treeweaver.onrender.com/"
                     />
                 </Col>
