@@ -79,6 +79,16 @@ const NavbarMain = () => {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/certificate"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fa fa-certificate" style={{ marginBottom: "2px", color: 'var(--my-tertiary-color)' }}/>{" "}Certificates
+              </Nav.Link>
+            </Nav.Item>
+
             <Nav.Item className="button type1">
               <Nav.Link
                 as={Link}
