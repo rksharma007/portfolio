@@ -204,7 +204,7 @@ class TagCloud extends React.Component {
 }
 
 const Skills = () => {
-    const tagName = ['Docker', 'CI/CD', 'Spring', 'Kafka', 'Jenkins', 'JavaScript', 'C++', 'Python', 'MongoDB', 'ExpressJs', 'ReactJs', 'NodeJs', 'HTML', 'CSS', 'Redux', 'MySQL', 'AWS', 'Stripe API', 'Razorpay API', 'GraphQL', 'OpenCV', 'IoT', 'PostgreSQL', 'Couchbase', 'Cassandra', 'OpenShift']
+    const tagName = ['NextJs', 'Docker', 'CI/CD', 'Spring', 'Kafka', 'Jenkins', 'JavaScript', 'C++', 'Python', 'MongoDB', 'ExpressJs', 'ReactJs', 'NodeJs', 'HTML', 'CSS', 'Redux', 'MySQL', 'AWS', 'Stripe API', 'Razorpay API', 'GraphQL', 'OpenCV', 'IoT', 'PostgreSQL', 'Couchbase', 'Cassandra', 'OpenShift']
     var style = getComputedStyle(document.body);
     const globeRadius = style.getPropertyValue('--skills-globe-radius');
     return (
