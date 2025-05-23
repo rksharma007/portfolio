@@ -8,6 +8,7 @@ import jenkins from '../../assets/certificates/jenkins.jpg';
 import mern from '../../assets/certificates/mern.jpg';
 import javascript from '../../assets/certificates/javascript.jpg';
 import kafka_springboot from '../../assets/certificates/kafka_springboot.jpg';
+import sdc from '../../assets/certificates/sdc.jpg';
 import StarBg from '../layout/StarBg';
 import CertificateCard from './CertificateCard';
 
@@ -78,6 +79,16 @@ const Certificate = () => {
                     title="Server-side JavaScript with Node.js"
                     skills="JavaScript, Node.js, File Systems, Mocha, Chai"
                     url="https://www.coursera.org/account/accomplishments/certificate/K3PP47M246HD"
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <CertificateCard
+                    imgPath={sdc}
+                    isBlog={false}
+                    title="Self Driving Cars"
+                    skills="Computer Vision, Simulations, Embedded Softwares, Vehicle Modelling & Control"
+                    url="https://www.coursera.org/account/accomplishments/certificate/VRJV99MEAM6K"
                     />
                 </Col>
 
