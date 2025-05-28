@@ -15,6 +15,7 @@ import taskifier from '../../assets/projects/taskifier.png';
 import esp32home from '../../assets/projects/esp32home.png';
 import bharatrescue from '../../assets/projects/bharatrescue.png';
 import treeweaver from '../../assets/projects/treeweaver.png';
+import facedit from '../../assets/projects/facedit.png';
 import StarBg from '../layout/StarBg';
 import ProjectCard from './ProjectCard';
 
@@ -27,6 +28,18 @@ const Project = () => {
                 My Recent <b className="highlight"> Works </b>
             </h1>
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                    imgPath={facedit}
+                    isBlog={false}
+                    title="FacedIt"
+                    stack="OpenCV, Python, ML"
+                    description= "FacedIt is a video face swapping tool based on inswapper_128.onnx model. Swap faces in any video directly in the cloud. Use only for educational purpose😉."
+                    ghLink="https://github.com/rksharma007/FacedIt"
+                    demoLink="https://colab.research.google.com/github/rksharma007/FacedIt/blob/main/video_face_swap.ipynb"
+                    />
+                </Col>
 
                 <Col md={4} className="project-card">
                     <ProjectCard
