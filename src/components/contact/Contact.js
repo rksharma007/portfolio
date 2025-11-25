@@ -41,7 +41,7 @@ const Contact = () => {
                                 <a href="https://www.instagram.com/rksharma3837" target="_blank" rel="noreferrer" >
                                     <i className="fa-brands fa-instagram" />
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.linkedin.com/in/ravi-kant-sharma-a37924200/" target="_blank" rel="noreferrer"  >
+                                <a href="https://www.linkedin.com/in/ravikantsharma007/" target="_blank" rel="noreferrer"  >
                                     <i className="fa-brands fa-linkedin" />
                                 </a>
                             </Col>

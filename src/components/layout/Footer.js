@@ -27,7 +27,7 @@ const Footer = () => {
           </li>
           <li className="social-icons">
             <a
-              href="https://www.linkedin.com/in/ravi-kant-sharma-a37924200/"
+              href="https://www.linkedin.com/in/ravikantsharma007/"
               target="_blank" 
               rel="noopener noreferrer"
             >
